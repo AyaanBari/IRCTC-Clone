@@ -1,0 +1,297 @@
+{% load static %}
+<!DOCTYPE >
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Clone</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <img src="{%static 'app1/image/logo.png' %}" alt="logo.png" height="100" width="500">
+    <div class="header">
+        <h1>Indian Railway Catering and Tourism Corporation</h1>
+        <h3>A Government Of India Enterprise</h3>
+    </div>
+    <nav class="na"><ul>
+        <li>
+            <a class="active" href="/app1">Home</a>
+        </li>
+        <li>
+            <a href="/app1/About">About</a>
+        </li>
+        <li>
+            <a href="/app1/Contact">Contact</a>
+        </li>
+    </nav><br>
+    <nav class ="nav">
+        <ul>
+            <li>
+                <a href="/app1/foodontrack">Food-On-Track</a>
+            </li>
+            <li>
+                <a href="/app1/Ebedroll">E-Bedroll</a>
+            </li>
+            <li>
+                <a href="/app1/Accomations">Accomations</a>
+            </li>
+            <li>
+                <a href="/app1/IRCTCoyomotels">IRCTC-Oyo-Motels</IRCTC-Oyo-Mo></a>
+            </li>
+            <li>
+                <a href="/app1/Ewheelchair">E-Wheelchair</a>
+            </li>
+            <li>
+                <a href="/app1/IRCTCtourism">IRCTC-Tourism</a>
+            </li>
+            <li>
+                <a href="/app1/IRCTCair">IRCTC-Air</a>
+            </li>
+            <li>
+                <a href ="/app1/MobileApps">Mobile-Apps</a>
+            </li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <p>
+        <center>
+        <section>
+            <div class="formheader">
+            <h1>Individual Registration</h1>
+            </div>
+        </section>
+        <section></section>
+        <form name="reg-form">
+
+        </form>
+         <form name="reg-form">
+            <table cellpadding ="9">
+            <tr>
+                
+                   <td><label for="uid">User-ID</label></td>   
+                    <td><input type="text" name="User-ID" required placeholder="Enter your User-ID"></td>
+               
+            </tr>
+            <tr>
+                
+                    <td><label for="pwd">Password</label></td>
+                    <td><input type="password" name="pwd" required placeholder="Enter your password"></td>
+                 
+            </tr>
+            <tr>
+                
+                    <td><label for="pwd">Confirm Password</label></td>
+                    <td><input type="password" name="pwd" required placeholder="Enter your password"></td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="security">Security Question</label>
+                    <td><select name="security">
+                        <option value="What is your pet name?">What is your pet name?</option>
+                        <option value="What is your favourite color?">What is your favourite color?</option>
+                        <option value="What is your favourite food?">What is your favourite food?</option>
+                        <option value="What is your favourite place?">What is your favourite place?</option>
+                        <option selected>-Select Security Question-</option>
+                    </select>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                
+                    <td><label for="security">Security Answer</label></td>
+                    <td><input type="text" name="security" required placeholder="Enter your security answer"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Preferred Language">Preferred Language</label>
+                   <td> <select name="Language">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Marathi">Marathi</option>
+                        <option value="Gujarati">Gujarati</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Malayalam">Malayalam</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Bengali">Bengali</option>
+                        <option value="Oriya">Oriya</option>
+                        <option value="Punjabi">Punjabi</option>
+                        <option value="Urdu">Urdu</option>
+                        <option value="Assamese">Assamese</option>
+                        <option value="Manipuri">Manipuri</option>
+                        <option value="Sanskrit">Sanskrit</option>
+                        <option value="Konkani">Konkani</option>
+                        <option value="Bodo">Bodo</option>
+                        <option value="Dogri">Dogri</option>
+                        <option value="Maithili">Maithili</option>
+                        <option value="Nepali">Nepali</option>
+                        <option value="Santali">Santali</option>
+                        <option value="Sindhi">Sindhi</option>
+                        <option value="Kashmiri">Kashmiri</option>
+                        <option value="Other">Other</option>
+                        <option selected>-Select Language-</option>
+                    </select></td>
+                </td>
+            </table>
+         </form>
+         <section>
+         <div class="formcontent">
+            Personal Details
+            </div>
+        </section> 
+        <section>
+            <form name="Details">
+                <table cellpadding="9">
+                    <tr>
+                        <td><label for="fname">First Name</label></td>
+                        <td><input type="text" name="fname" required placeholder="Enter your first name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mname">Middle Name</label></td>
+                        <td><input type="text" name="mname" placeholder="Enter your middle name">(Optional)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input type="text" name="lname" required placeholder="Enter your last name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            <input type="radio" name="gender" value="Male" checked>Male
+                            <input type="radio" name="gender" value="Female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="marital_status">Marital Status</label></td>
+                        <td>
+                            <input type="radio" name="marital_status" value="Married" checked>Married
+                            <input type="radio" name="marital_status" value="Unmarried">Unmarried
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><input type="date" name="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="occupation">Occupation</label></td>
+                        <td>
+                            <select name="Occupation" >
+                                <option value="Public">Public</option>
+                                <option value="Business">Business</option>
+                                <option value="Student">Student</option>
+                                <option value="Self Employed">Self Employed</option>
+                                <option value="Private Service">Private Service</option>
+                                <option value="Government Service">Government Service</option>
+                                <option value="House Wife">House Wife</option>
+                                <option value="Retired">Retired</option>
+                                <option value="Others">Others</option>
+                                <option selected>-Select Occupation-</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td> <label for="addhar">Addhar Card No.</label></td>
+                            <td> <input type="text" name="addhar" placeholder="Enter Addhar Number">(Optional)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="pan">PAN Card No.</label></td>
+                        <td><input type="text" name="pan" placeholder="Enter PAN Number">(Optional)</td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-Mail ID</label></td>
+                        <td><input type="email" name="email" required placeholder="Enter your E-Mail ID"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile No.</label></td>
+                        <td>+91<input type="text" name="mobile" required placeholder="Enter your mobile number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nationality">Nationality</label></td>
+                        <td>
+                            <select name="nationality">
+                                <option value="Indian">Indian</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr> 
+                </table>
+            </form>
+        </section> 
+        <section>
+            <div class="formcontent">
+                Residential Address
+            </div>
+        </section> 
+        <section>
+            <form name="address">
+                <table>
+                    <tr>
+                        <td><label for="flat">Flat/Block No.</label></td>
+                        <td><input type="text" name="flat" required placeholder="Enter your flat/block number"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="street">Street/Lane</label></td>
+                        <td><input type="text" name="street" required placeholder="Enter your Street/Lane"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="area">Area/Locality</label></td>
+                        <td><input type="text" name="area" required placeholder="Enter your Area/Locality"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pin">Pin Code</label></td>
+                        <td><input type="text" name="pin" required placeholder="Enter your Pin Code"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City/Town</label></td>
+                        <td><input type="text" name="city" required placeholder="Enter your City/Town"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">State</label></td>
+                        <td><input type="text" name="state" required placeholder="Enter your State"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td>
+                            <select name="Country" >
+                                <option value="India">India</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="post">Post office</label></td>
+                        <td>
+                            <select name="post" >
+                                <option value="Jadavpur">India</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone No.</label></td>
+                        <td><input type="text" name="phone" required placeholder="Enter your phone number"></td>
+                    </tr>
+                    <td><a class="href" href="/app1/office">Copy Residential Address to Office Address</a></td>
+                    <td><input type="radio" name="address" value="Yes">Yes</td>
+                    <td><input type="radio" name="address" value="No">No</td>
+                </table>
+            </form>
+        </section>
+            <div class="foothead">
+                Subscription to IRCTC Newsletter/Promotions/SBI Card Newsletter
+            </div>
+        <section>
+            <a href="">IRCTC Newsletter</a>
+            <a href="">Commercial Promotions</a>
+            <a href="">IRCTC SBI Card Newsletter</a>
+        </section>
+        <Section>
+        <div class="formcontent">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+        </Section>
+        </center>
+    </p>
+</body>
+</html>
